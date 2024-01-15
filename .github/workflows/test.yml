@@ -1,4 +1,4 @@
-name: CI
+name: Hello World Workflow
 
 on:
   push:
@@ -12,6 +12,17 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+        -name: Hello World
+         run: echo "Hello World"
+         shell: bash
+
+     goodbye:
+        runs-on: ubuntu-latest
+
+      steps:
+         -name: goodbye World
+           run: echo "Goodbye World"
+           shell: bash
 
       # Add your build/test/deploy steps here
 
