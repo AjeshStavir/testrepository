@@ -12,17 +12,17 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-        -name: Hello World
-         run: echo "Hello World"
-         shell: bash
 
-     goodbye:
-        runs-on: ubuntu-latest
+      - name: Hello World
+        run: echo "Hello World"
+        shell: bash
 
-      steps:
-         -name: goodbye World
-           run: echo "Goodbye World"
-           shell: bash
+  goodbye:
+    runs-on: ubuntu-latest
 
-      # Add your build/test/deploy steps here
+    steps:
+      - name: Goodbye World
+        run: echo "Goodbye World"
+        shell: bash
+
 
