@@ -36,7 +36,6 @@ jobs:
             echo "Running Hello World on EC2"
             cd home
             git pull origin main
-            # Add any other necessary commands here
-            cat logs-of-your-job.txt  # Assuming your job logs are stored in a file
+           
 
 
