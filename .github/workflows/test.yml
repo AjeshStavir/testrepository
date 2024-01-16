@@ -25,4 +25,18 @@ jobs:
         run: echo "Goodbye World"
         shell: bash
 
+      - name: SSH into EC2 and print logs
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST_DNS }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          port: 22
+          script: |
+            echo "Running Hello World on EC2"
+            cd ${{ secrets.TARGET_DIR }}
+            git pull origin main
+            # Add any other necessary commands here
+            cat logs-of-your-job.txt  # Assuming your job logs are stored in a file
+
 
