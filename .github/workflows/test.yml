@@ -37,7 +37,7 @@ jobs:
             cd home
             cd test
             git pull origin main
-            cat logs-of-your-job.txt  # Assuming job logs are stored in a file
+           
            
 
 
