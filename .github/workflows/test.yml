@@ -33,10 +33,9 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           port: 22
           script: |
-            echo "Running Hello World on EC2"
             cd home
             cd test
-            git pull origin main
+            echo "Running Hello World on EC2"
            
            
 
