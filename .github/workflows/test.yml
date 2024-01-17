@@ -35,7 +35,9 @@ jobs:
           script: |
             echo "Running Hello World on EC2"
             cd home
-            git pull origin main
+            mkdir test
+            cd test
+            git clone 
             cat logs-of-your-job.txt  # Assuming job logs are stored in a file
            
 
