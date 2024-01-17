@@ -37,7 +37,7 @@ jobs:
             cd home
             mkdir test
             cd test
-            git clone https://github.com/AjeshStavir/testrepository.git
+            git pull origin main
             cat logs-of-your-job.txt  # Assuming job logs are stored in a file
            
 
